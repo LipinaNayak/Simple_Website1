@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-image: url(IMG_0546.PNG);
+    background-color: cadetblue;
+    background-position:center;
+    background-size: cover;
+    position: relative;
+ }
+ nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .nav_link{
+    flex: 1;
+    text-align: right;
+ }
+ .nav_link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+ }
+ .nav_link ul li a{
+    color:crimson;
+    text-decoration: none;
+    font-size: 16px;
+ }
+ .nav_link ul li::after {
+    content:'';
+    width:0%;
+    height:2px;
+    background:black;
+    display:block;
+    margin:auto;
+    transition:0.5s;
+
+}
+.nav_link ul li:hover::after{
+    width: 100%
+    ;
+} 
+.text_box{
+  width: 90%;  
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+
+}
+.text_box h1{
+    font-size: 60px;
+}
+.text_box p{
+    font-size: 18px;
+    font-style: italic;
+
+}
+.center{
+    display: block;
+    background-color: bisque;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    box-shadow: 1px 2px 10px 5px black;
+}
+.header1{
+  background-color:lightcoral;
+
+}
+    
+    #column-box {
+      float: left;
+      width: 20%;
+      padding: 20px;
+      margin: 0px 20px 0px
+    }
+
+    .row{
+      justify-content: center;
+      position: relative;
+     left: 160px;
+    }
+    
+    
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+
+    #column-box {
+      position:relative;
+      width: 20%;
+    }
+    
+    .image {
+      display: block;
+      width: 50%;
+      height:90%;
+    }
+    
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 90%;
+      width: 90%;
+      opacity: 0;
+      transition: .5s ease;
+      background-color:coral;
+    }
+    
+    #column-box:hover .overlay {
+      opacity: 1;
+    }
+    
+    .text {
+      color:black;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
